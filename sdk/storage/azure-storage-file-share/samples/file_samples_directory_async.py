@@ -26,7 +26,7 @@ import asyncio
 SOURCE_FILE = './SampleSource.txt'
 DEST_FILE = './SampleDestination.txt'
 
-
+# cSpell:ignore mydirectory
 class DirectorySamplesAsync(object):
 
     connection_string = os.getenv('AZURE_STORAGE_CONNECTION_STRING')

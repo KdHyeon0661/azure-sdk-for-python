@@ -32,7 +32,7 @@ from . import sign_string
 logger = logging.getLogger(__name__)
 
 
-
+# cSpell:ignore yarl
 # wraps a given exception with the desired exception type
 def _wrap_exception(ex, desired_type):
     msg = ""

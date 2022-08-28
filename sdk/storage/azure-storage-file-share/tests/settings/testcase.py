@@ -35,7 +35,7 @@ except ImportError:
     from devtools_testutils import mgmt_settings_fake as settings
 
 
-
+# cSpell:ignore pyacrstoragestorname, pyrmtstoragestorname
 LOGGING_FORMAT = '%(asctime)s %(name)-20s %(levelname)-5s %(message)s'
 os.environ['STORAGE_ACCOUNT_NAME'] = os.environ.get('STORAGE_ACCOUNT_NAME', None) or STORAGE_ACCOUNT_NAME
 os.environ['STORAGE_ACCOUNT_KEY'] = os.environ.get('STORAGE_ACCOUNT_KEY', None) or STORAGE_ACCOUNT_KEY

@@ -28,7 +28,7 @@ from azure.storage.fileshare import ShareAccessTier
 SOURCE_FILE = './SampleSource.txt'
 DEST_FILE = './SampleDestination.txt'
 
-
+# cSpell:ignore mydir, myfile
 class ShareSamplesAsync(object):
 
     connection_string = os.getenv('AZURE_STORAGE_CONNECTION_STRING')

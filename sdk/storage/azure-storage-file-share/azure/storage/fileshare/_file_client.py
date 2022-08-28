@@ -50,7 +50,7 @@ if TYPE_CHECKING:
     from ._models import ShareProperties, ContentSettings, FileProperties, Handle
     from ._generated.models import HandleItem
 
-
+# cSpell:ignore prevsharesnapshot
 def _upload_file_helper(
         client,
         stream,

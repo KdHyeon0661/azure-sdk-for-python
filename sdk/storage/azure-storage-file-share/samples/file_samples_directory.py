@@ -25,7 +25,7 @@ import os
 SOURCE_FILE = './SampleSource.txt'
 DEST_FILE = './SampleDestination.txt'
 
-
+# cSpell:ignore mydirectory
 class DirectorySamples(object):
 
     connection_string = os.getenv('AZURE_STORAGE_CONNECTION_STRING')

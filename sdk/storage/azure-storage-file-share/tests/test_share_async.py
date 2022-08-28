@@ -38,7 +38,7 @@ from devtools_testutils.storage import LogCaptured
 TEST_SHARE_PREFIX = 'share'
 # ------------------------------------------------------------------------------
 
-
+# cSpell:ignore testid, filea, fileb
 class AiohttpTestTransport(AioHttpTransport):
     """Workaround to vcrpy bug: https://github.com/kevin1024/vcrpy/pull/461
     """

@@ -26,7 +26,7 @@ TEST_FILE_PREFIX = 'file'
 FILE_PATH = 'file_output.temp.{}.dat'.format(str(uuid.uuid4()))
 # ------------------------------------------------------------------------------
 
-
+# cSpell:ignore utdir
 class StorageGetFileTest(StorageTestCase):
     def _setup(self, storage_account_name, storage_account_key):
         # test chunking functionality by reducing the threshold

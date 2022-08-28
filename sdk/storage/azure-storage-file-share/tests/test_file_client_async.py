@@ -30,7 +30,7 @@ _CONNECTION_ENDPOINTS = {'file': 'FileEndpoint'}
 
 _CONNECTION_ENDPOINTS_SECONDARY = {'file': 'FileSecondaryEndpoint'}
 
-
+# cSpell:ignore mydomain
 class AiohttpTestTransport(AioHttpTransport):
     """Workaround to vcrpy bug: https://github.com/kevin1024/vcrpy/pull/461
     """

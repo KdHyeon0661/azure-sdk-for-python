@@ -23,6 +23,7 @@ if TYPE_CHECKING:
         FileSasPermissions
     )
 
+#cSpell:ignore rcwd, rcwdl
 class FileSharedAccessSignature(SharedAccessSignature):
     '''
     Provides a factory for creating file and share access

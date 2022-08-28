@@ -26,7 +26,7 @@ import asyncio
 SOURCE_FILE = './SampleSource.txt'
 DEST_FILE = './SampleDestination.txt'
 
-
+# cSpell:ignore myfile
 class HelloWorldSamplesAsync(object):
 
     connection_string = os.getenv('AZURE_STORAGE_CONNECTION_STRING')

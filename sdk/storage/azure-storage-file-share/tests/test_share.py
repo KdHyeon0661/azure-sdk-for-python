@@ -36,6 +36,7 @@ from settings.testcase import FileSharePreparer
 TEST_SHARE_PREFIX = 'share'
 # ------------------------------------------------------------------------------
 
+# cSpell:ignore myaccount, testid, filea, fileb
 class StorageShareTest(StorageTestCase):
     def _setup(self, storage_account_name, storage_account_key):
         file_url = self.account_url(storage_account_name, "file")

@@ -48,7 +48,7 @@ TEST_FILE_PERMISSIONS = 'O:S-1-5-21-2127521184-1604012920-1887927527-21560751G:S
                         'S-1-5-21-397955417-626881126-188441444-3053964)'
 # ------------------------------------------------------------------------------
 
-
+# cSpell:ignore abcdefghijklmnop, vhds, filetoupdate, testid
 class StorageFileTest(StorageTestCase):
     def _setup(self, storage_account_name, storage_account_key, rmt_account=None, rmt_key=None):
         super(StorageFileTest, self).setUp()

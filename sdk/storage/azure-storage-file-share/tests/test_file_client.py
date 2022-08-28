@@ -30,6 +30,7 @@ _CONNECTION_ENDPOINTS = {'file': 'FileEndpoint'}
 
 _CONNECTION_ENDPOINTS_SECONDARY = {'file': 'FileSecondaryEndpoint'}
 
+# cSpell:ignore mydomain
 class StorageFileClientTest(StorageTestCase):
     def _setup(self, storage_account_name, storage_account_key):
         self.account_name = storage_account_name

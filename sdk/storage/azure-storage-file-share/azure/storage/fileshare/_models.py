@@ -24,7 +24,7 @@ from ._generated.models import SmbMultichannel as GeneratedSmbMultichannel
 from ._generated.models import AccessPolicy as GenAccessPolicy
 from ._generated.models import DirectoryItem
 
-
+# cSpell:ignore XSMB
 def _wrap_item(item):
     if isinstance(item, DirectoryItem):
         return {'name': item.name, 'is_directory': True}
@@ -360,7 +360,7 @@ class ShareProperties(DictMixin):
         self.provisioned_egress_mbps = kwargs.get('x-ms-share-provisioned-egress-mbps')
         self.provisioned_ingress_mbps = kwargs.get('x-ms-share-provisioned-ingress-mbps')
         self.provisioned_iops = kwargs.get('x-ms-share-provisioned-iops')
-        self.provisioned_bandwidth = kwargs.get('x-ms-share-provisioned-bandwidth-mibps')
+        self.provisioned_bandwidth = kwargs.get('x-ms-share-provisioned-bandwidth-mbps')
         self.lease = LeaseProperties(**kwargs)
         self.protocols = [protocol.strip() for protocol in kwargs.get('x-ms-enabled-protocols', None).split(',')]\
             if kwargs.get('x-ms-enabled-protocols', None) else None

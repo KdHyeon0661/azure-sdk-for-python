@@ -29,7 +29,7 @@ TEST_FILE_PREFIX = 'file'
 FILE_PATH = 'file_output.temp.{}.dat'.format(str(uuid.uuid4()))
 # ------------------------------------------------------------------------------
 
-
+# cSpell:ignore utdir
 class AiohttpTestTransport(AioHttpTransport):
     """Workaround to vcrpy bug: https://github.com/kevin1024/vcrpy/pull/461
     """
