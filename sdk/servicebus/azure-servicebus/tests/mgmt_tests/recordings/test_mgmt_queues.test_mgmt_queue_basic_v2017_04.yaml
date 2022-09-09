@@ -1,3 +1,4 @@
+# cSpell:disable
 interactions:
 - request:
     body: null
@@ -459,3 +460,4 @@ interactions:
       code: 400
       message: Bad Request
 version: 1
+# cSpell:enable

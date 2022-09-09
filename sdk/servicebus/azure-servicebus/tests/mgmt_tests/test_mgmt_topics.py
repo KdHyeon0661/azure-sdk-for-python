@@ -23,7 +23,7 @@ from mgmt_test_utilities import clear_topics
 
 _logger = get_logger(logging.DEBUG)
 
-
+# cSpell:disable
 class ServiceBusAdministrationClientTopicTests(AzureMgmtTestCase):
     @CachedResourceGroupPreparer(name_prefix='servicebustest')
     @CachedServiceBusNamespacePreparer(name_prefix='servicebustest')
@@ -524,3 +524,4 @@ class ServiceBusAdministrationClientTopicTests(AzureMgmtTestCase):
 
         with pytest.raises(HttpResponseError):
             mgmt_service.create_topic("topic_can_not_be_created", max_message_size_in_kilobytes=1024)
+# cSpell:enable

@@ -23,6 +23,7 @@ SERVICEBUS_QUEUE_PARAM = 'servicebus_queue'
 SERVICEBUS_AUTHORIZATION_RULE_PARAM = 'servicebus_authorization_rule'
 SERVICEBUS_QUEUE_AUTHORIZATION_RULE_PARAM = 'servicebus_queue_authorization_rule'
 
+# cSpell:ignore sbname, sbtopic, sbsub, sbqueue, sbnameauth, sbqueueauth
 # Service Bus Namespace Preparer and its shorthand decorator
 class ServiceBusNamespacePreparer(AzureMgmtPreparer):
     def __init__(self,

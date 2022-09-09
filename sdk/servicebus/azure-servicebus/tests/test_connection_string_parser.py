@@ -23,6 +23,7 @@ class ServiceBusConnectionStringParserTests(AzureMgmtTestCase):
         assert parse_result.shared_access_key == 'THISISATESTKEYXXXXXXXXXXXXXXXXXXXXXXXXXXXX='
 
     def test_sb_conn_str_parse_sas_and_shared_key(self, **kwargs):
+        # cspell:disable-next-line
         conn_str = 'Endpoint=sb://resourcename.servicebus.windows.net/;SharedAccessKeyName=test;SharedAccessKey=THISISATESTKEYXXXXXXXXXXXXXXXXXXXXXXXXXXXX=;SharedAccessSignature=THISISASASXXXXXXX='
         with pytest.raises(ValueError) as e:
             parse_result = parse_connection_string(conn_str)

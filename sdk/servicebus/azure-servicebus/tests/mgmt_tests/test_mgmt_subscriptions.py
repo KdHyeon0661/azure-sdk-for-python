@@ -22,7 +22,7 @@ from mgmt_test_utilities import clear_topics
 
 _logger = get_logger(logging.DEBUG)
 
-
+# cSpell:disable
 class ServiceBusAdministrationClientSubscriptionTests(AzureMgmtTestCase):
     @CachedResourceGroupPreparer(name_prefix='servicebustest')
     @CachedServiceBusNamespacePreparer(name_prefix='servicebustest')
@@ -507,3 +507,4 @@ class ServiceBusAdministrationClientSubscriptionTests(AzureMgmtTestCase):
         finally:
             mgmt_service.delete_subscription(topic_name, subscription_name)
             mgmt_service.delete_topic(topic_name)
+# cSpell:enable
